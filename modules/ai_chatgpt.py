@@ -16,7 +16,7 @@ class ChatGPT:
         self.proxy_url = PROXY_URL
         self.http_client = httpx.Client(proxy=self.proxy_url, timeout=30)
         self.client = openai.OpenAI(api_key=self.api_key, http_client=self.http_client)
-        self.message_history = [{"role":"system", "content":""}, {"role":"user", "content":"Давай устроим мозговой штурм. Я дам тебе идею проекта, а ты будешь оценивать ее сильные и слабые стороны и предлагать интересные новые идеи в рамках этого проекта. На выходе должны получить хорошую крепкую концепцию. Хорошо продумывай свои ответы, чтобы они поместились в 1000 токенов."}]
+        self.message_history = [{"role":"system", "content":""}, {"role":"user", "content":"Нужно рассмотреть предложенный проект"}]
         
         
 
